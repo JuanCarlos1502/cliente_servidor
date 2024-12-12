@@ -35,7 +35,7 @@ const Main = () => {
         <div className="row gx-2, text-center">
             {
                 pokemonList.map((option, index) => (
-                    <PokemonButton option={option} isWinner={pokemonWinner === index} key={option.pokemon} setYouuWon = {youWon}/>
+                    <PokemonButton option={option} isWinner={pokemonWinner === index} key={option.pokemon} setYouWon = {setYouWon}/>
                 ))
             }
         

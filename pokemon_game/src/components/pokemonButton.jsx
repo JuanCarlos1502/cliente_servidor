@@ -1,7 +1,7 @@
 import confetti from "canvas-confetti"
 import PropTypes from "prop-types"
 
-const handleClickButton = (isWinner) => {
+const handleClickButton = (isWinner, setYouWon) => {
 
     if (isWinner) {
         alert("You Won!");

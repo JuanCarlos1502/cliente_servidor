@@ -1,13 +1,15 @@
 import "../assets/css/pokemon.css"
 import PropTypes from "prop-types"
 
+const showPokemon = "my-5"
+const hidePokemon = "my-5 pokemon-shadow"
+
 const Pokemon = (props) => {
     
     return(
         <div>
-        <img src={props.winner} alt="Pokemon" width="400" className={"my-5" + props.youwon ? "" :
-        "pokemon-shadow"
-        } />
+        <img src={props.winner} alt="Pokemon" height="350" className={props.youWon ? showPokemon :
+        hidePokemon} />
         </div>
     
     )
@@ -15,7 +17,7 @@ const Pokemon = (props) => {
 
 Pokemon.propTypes = {
     winner: PropTypes.string,
-    youWon: PropTypes.boot,
+    youWon: PropTypes.bool,
 }
 
 export default Pokemon
