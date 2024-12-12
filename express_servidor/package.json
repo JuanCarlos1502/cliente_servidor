@@ -1,7 +1,7 @@
 {
-  "name": "pokedex_backend",
+  "name": "express_servidor",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,9 +10,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.21.1",
-    "mariadb": "^3.4.0",
-    "node-fetch": "^3.3.2"
+    "express": "^4.21.0"
   }
 }
